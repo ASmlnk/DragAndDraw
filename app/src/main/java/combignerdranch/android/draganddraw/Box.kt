@@ -1,10 +1,13 @@
 package combignerdranch.android.draganddraw
 
 import android.graphics.PointF
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 import kotlin.math.max
 import kotlin.math.min
 
-class Box(val start: PointF) {
+@Parcelize
+class Box(val start: PointF): Parcelable {
 
     var end: PointF = start
 
